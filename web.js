@@ -1,11 +1,14 @@
-#!/bin/env node 
+'use strict';
 
-var express = require('express');
+var express = require('express'),
+	fs		= require('fs'),
+	app 	= express.createServer(express.logger());
 
-var app = express.createServer(express.logger());
+var indexFile = fs.readFileSync('index.html');
+var buffer = new Buffer(indexFile);
 
 app.get('/', function(request, response) {
-  response.send('Hello World 2!');
+  response.send(buffer.toString());
 });
 
 var port = process.env.PORT || 5000;
