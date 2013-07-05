@@ -25,6 +25,7 @@ var fs = require('fs');
 var program = require('commander');
 var cheerio = require('cheerio');
 var rest = require('restler');
+
 var HTMLFILE_DEFAULT = "index.html";
 var CHECKSFILE_DEFAULT = "checks.json";
 var FILE_TEMP_DEFAULT = "temp.html";
@@ -76,13 +77,10 @@ if(require.main == module) {
 		.option('-u, --url <url_to_file>', 'Path to URL')
 		.parse(process.argv);
 
-	var fileFromURL;
-
 	// URL check option
-	if(program.url){
-		fileFromURL = FILE_TEMP_DEFAULT;
+	var fileFromURL = FILE_TEMP_DEFAULT;
+	if(program.url){	
 
-		fs.writeFileSync(fileFromURL);
 		rest.get(program.url).on('complete', function(result) {
 			if(result instanceof Error) {
 				console.log('Error: ' + result.message);
