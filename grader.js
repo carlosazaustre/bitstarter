@@ -21,14 +21,14 @@
    		- https://developer.mozilla.org/en-US/docs/JSON#JSON_in_Firefox_2
 */
 
-var fs = require('fs');
-var program = require('commander');
-var cheerio = require('cheerio');
-var rest = require('restler');
+var fs 			= require('fs')
+,		program = require('commander')
+,		cheerio = require('cheerio')
+,		rest 		= require('restler')
 
-var HTMLFILE_DEFAULT = "index.html";
-var CHECKSFILE_DEFAULT = "checks.json";
-var FILE_TEMP_DEFAULT = "temp.html";
+,		HTMLFILE_DEFAULT 		= "index.html"
+,		CHECKSFILE_DEFAULT 	= "checks.json"
+,		FILE_TEMP_DEFAULT 	= "temp.html";
 
 var assertFileExists = function(infile) {
 	var instr = infile.toString(9);
@@ -58,13 +58,24 @@ var checkHtmlFile = function(htmlfile, checksfile) {
 	return out;
 };
 
-var clone = function(fn) {
-	// Workaround for commander.js issue.
-	// http://stackoverflow.com/a/6772648
-	return fn.bind({});
+var checkURLFile = function(urlfile, checksfile) {
+	var _fileFromURL = FILE_TEMP_DEFAULT;
+
+	rest.get(urlfile).on('complete', function(result) {
+		
+		if(result instanceof Error) {
+			console.log('Error: ' + result.message);
+			this.retry(5000);
+		
+		} else {
+			fs.writeFileSync(_fileFromURL, result);
+			grader(_fileFromURL, checksfile);
+		}
+
+	});
 };
 
-var main = function(htmlfile, checksfile) {
+var grader = function(htmlfile, checksfile) {
 	var checkJson = checkHtmlFile(htmlfile, checksfile);
 	var outJson = JSON.stringify(checkJson, null, 4);
 	console.log(outJson);
@@ -72,33 +83,21 @@ var main = function(htmlfile, checksfile) {
 
 if(require.main == module) {
 	program
-		.option('-c, --checks <check_file>', 'Path to checks.json', clone(assertFileExists), CHECKSFILE_DEFAULT)
-		.option('-f, --file <html_file>', 'Path to index.html', clone(assertFileExists), HTMLFILE_DEFAULT)
+		.option('-c, --checks <check_file>', 'Path to checks.json', assertFileExists, CHECKSFILE_DEFAULT)
+		.option('-f, --file <html_file>', 'Path to index.html', assertFileExists, HTMLFILE_DEFAULT)
 		.option('-u, --url <url_to_file>', 'Path to URL')
 		.parse(process.argv);
 
-	// URL check option
-	var fileFromURL = FILE_TEMP_DEFAULT;
 	if(program.url){	
-
-		rest.get(program.url).on('complete', function(result) {
-			if(result instanceof Error) {
-				console.log('Error: ' + result.message);
-				this.retry(5000);
-			} else {
-				fs.writeFileSync(fileFromURL, result);
-				main(fileFromURL, program.checks);
-			}
-		});
+		checkURLFile(program.url, program.checks);
 	
 	} else {
-		main(program.file, program.checks);
-	}
-
-	
+		grader(program.file, program.checks);
+	} 	
 
 } else {
 	exports.checkHtmlFile = checkHtmlFile;
+	exports.checkURL = checkURLFile;
 }
 
 
