@@ -1,14 +1,16 @@
-'use strict';
+var express = require('express')
+,   fs	    = require('fs')
+,   app     = express.createServer(express.logger());
 
-var express = require('express'),
-	fs		= require('fs'),
-	app 	= express.createServer(express.logger());
-
-var indexFile = fs.readFileSync('index.html');
-var buffer = new Buffer(indexFile);
+// Function to read a file stream
+var readFile = function(filename) {
+    var _file = fs.readFileSync(filename);
+    var _buffer = new Buffer(_file);
+    return _buffer.toString();
+};
 
 app.get('/', function(request, response) {
-  response.send(buffer.toString());
+  response.send(readFile('index.html'));
 });
 
 var port = process.env.PORT || 5000;
