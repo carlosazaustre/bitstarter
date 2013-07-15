@@ -22,7 +22,7 @@
 */
 
 var fs 			= require('fs')
-,		program = require('commander')
+,		program = require('commander');
 ,		cheerio = require('cheerio')
 ,		rest 		= require('restler')
 
