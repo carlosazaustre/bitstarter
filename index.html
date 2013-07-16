@@ -73,7 +73,7 @@
 			.video, .thermometer, .order, .social, .statistics{
 				text-align: center;
 			}
-			.statistics h3. .statistics p {
+			.statistics h3, .statistics p {
 				color: white;
 			}
 
@@ -85,6 +85,16 @@
 			}
 			.asset {
 				padding: 2.5% 0;
+			}
+			.footer {
+				color: #cccccc;
+				text-align: center;
+			}
+			.footer p {
+				font-size: 11px;
+			}
+			.footer a {
+				color: #ccccff;
 			}
 		</style>
 	</head>
@@ -164,14 +174,14 @@
 						<!-- Bootstrap progress bar -->
 						<!-- http://twitter.github.io/bootstrap/components.html#progress -->
 						<div class="thermomether progress active">
-							<div class="bar bar-sucess" style="width: 60%;"></div>
+							<div class="bar bar-success" style="width: 60%;"></div>
 							<div class="bar bar-warning" style="width: 40%;"></div>
 						</div>
 					</div>
 					<div class="span6 offset3 order">
 						<!-- Standard bootstrap button -->
 						<!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-						<button class="btn btn-sucess btn-large">Preorder</button>
+						<button class="btn btn-success btn-large">Preorder</button>
 					</div>
 					<div class="span8 offset2 social">
 						<!-- Special buttons are not included in default bootstrap. -->
@@ -239,10 +249,12 @@
 				</div>
 
 			</div>
-
-			<div class="row footer">
+			
+			<!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
+			<!-- http://creativecommons.org/licenses/ -->
+			<div class="row-fluid footer">
 				<div class="span12">
-					Footer
+					<p>This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>, without all the cruft that would otherwise be put at the bottom of the page.</p>
 				</div>
 			</div>
 		</div>
