@@ -2,14 +2,15 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Chefly | A Bitstarter Project</title>
+		<title>Bitstarter: Chefly</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css" />
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
 		<link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic">
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800">
-		<script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+		<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
+          rel="stylesheet" type="text/css">
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
 		<script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
 		<style type="text/css">
 			/* Large Desktop */
@@ -26,7 +27,7 @@
 			}
 
 			/* Landscape phones and down */
-			@media (max-width: 640px) {
+			@media (max-width: 480px) {
 				.copy {
 					padding: 2.5% 10%;
 				}
@@ -57,7 +58,7 @@
 				font-size: 18px;
 				line-height: 24px;
 			}
-			
+
 			/* Video pitch and Action */
 			.pitch {
 				padding: 2.5% 0;
@@ -141,7 +142,7 @@
 			</div>
 			<div class="row-fluid pitch">
 				<div class="span5 offset1 video">
-					<img class="img-polaroid" src="http://img854.imageshack.us/img854/8002/fkdv.png" alt="Promo Image 1">
+					<img class="img-polaroid" src="http://imageshack.us/a/img203/3056/o5s.png">
 				</div>
 
 				<!-- We define a new 'actions' div to contain statistics, order and share buttons -->
@@ -196,19 +197,19 @@
 			<!-- http://placehold.it -->
 			<div class="row-fluid section1">
 				<div class="span5 offset1 asset">
-					<img src="http://imageshack.us/a/img856/8600/qaol.png" class="img-polaroid" alt="Promo Image 2">
+					<img src="http://imageshack.us/a/img15/1742/72v.png" class="img-polaroid">
 				</div>
 				<div class="span5 copy">
-					<p>With one tap, <em>Chefly</em> puts in your hand nearby people with great culinary skills willing to be your private chef. Choose your favorite kind of food (Spanish tapas, Italian pasta, organic, fish,...) and find your favourite chef. <em>Chefly</em> lets you contact them in order to apply for their services. Ideal for students or workers who have not time to go to the grocery shop and cook meals, as well when you have a birthday event or something like that and you have not to waste your time to cook. <em>Chefly</em> is your best option. Save time and enjoy of a great homemade meal!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla ante lectus, a pellentesque lacus dignissim ac. Sed volutpat lorem ut congue malesuada. In facilisis scelerisque turpis sed lacinia. Donec in orci lectus. Donec auctor semper quam, eget rhoncus purus fringilla id. Phasellus id nibh eu risus ultrices adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla.</p>
 				</div>
 			</div>
 
 			<div class="row-fluid section2">
 				<div class="span5 offset1 copy copy-right">
-					<p>You can become the somebody's favourite chef too. If you have good culinary skills and you want to earn money on it, sign up as chef on <em>Chefly</em> and offer your services. You choose your price for dish, catering, feast,... You will make money with each task you take out and your client will rate you and he will write a review of your services. Every good commentary is a big opportunity for you to get more clients and more money!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla ante lectus, a pellentesque lacus dignissim ac. Sed volutpat lorem ut congue malesuada. In facilisis scelerisque turpis sed lacinia. Donec in orci lectus. Donec auctor semper quam, eget rhoncus purus fringilla id. Phasellus id nibh eu risus ultrices adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla.</p>
 				</div>
 				<div class="span5 asset">
-					<img src="http://imageshack.us/a/img841/4825/u0kz.png" class="img-polaroid" alt="Promo Image 3">
+					<img src="http://imageshack.us/a/img17/8549/lc5s.png" class="img-polaroid">
 				</div>
 			</div>
 			
@@ -219,86 +220,30 @@
 				<div class="span10 offset1">
 					<h3>FAQ</h3>
 					<div id="accordion2" class="accordion">
-						
 						<div class="accordion-group">
 							<div class="accordion-heading">
 								<a href="#collapseOne" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2">
-									How Chefly works?
+									What does FAQ stand for?
 								</a>
 							</div>
 							<div id="collapseOne" class="accordion-body collapse">
 								<div class="accordion-inner">
-									<em>Chefly</em> has two kind of user. The “Client”, who looks for chefs in the app in order to save time. You can choose your favorite foods, if you would like use your own ingredients or your chef’s ingredients, if you prefer the chef cooks in your house or he brings the meal done.<br/> 
-									The other user is the “Chef”. you offer your services and choose your price. You can make the meal in your home or in the client’s house. You can buy the ingredients or to use the ingredients bought by the client. 
+									Frequently Asked Question.
 								</div>
 							</div>
 						</div>
-
 						<div class="accordion-group">
 							<div class="accordion-heading">
 								<a href="#collapseTwo" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2">
-									How Chefly costs?
+									What's a Frequently Asked Question?
 								</a>
 							</div>
 							<div id="collapseTwo" class="accordion-body collapse">
 								<div class="accordion-inner">
-									The app is free. You only must pay the chef once he makes your meal. If you are a chef, <em>Chefly</em> only charges a percent for each task you done.
+									A question which is commonly asked by users.
 								</div>
 							</div>
 						</div>
-
-						<div class="accordion-group">
-							<div class="accordion-heading">
-								<a href="#collapseThree" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2">
-									Can I sign up as Chef?
-								</a>
-							</div>
-							<div id="collapseThree" class="accordion-body collapse">
-								<div class="accordion-inner">
-									Of course! We encourage you done and you start to get good reviews in order to get new tasks and more and more. You put your price, your preferences and your location. <em>Chefly</em> does the rest.
-								</div>
-							</div>
-						</div>
-
-						<div class="accordion-group">
-							<div class="accordion-heading">
-								<a href="#collapseFour" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2">
-									If I'm Chef, When I receive the money?
-								</a>
-							</div>
-							<div id="collapseFour" class="accordion-body collapse">
-								<div class="accordion-inner">
-									<em>Chefly</em> is based on a recommendations and reviews systems. When you finish a meal task, the client will pay you the agreed price and he rating and review you. At the end of the month, Chefly will count your finished tasks and will charge you a percentage (8%) for services. If you have not taks in a month, you will not be charged.
-								</div>
-							</div>
-						</div>
-
-						<div class="accordion-group">
-							<div class="accordion-heading">
-								<a href="#collapseFive" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2">
-									Where Chefly is active?
-								</a>
-							</div>
-							<div id="collapseFive" class="accordion-body collapse">
-								<div class="accordion-inner">
-									<em>Chefly</em> works all over the world. The app shows the chefs nearby to your location. If you don’t see chefs in your area, you can spread the word!
-								</div>
-							</div>
-						</div>
-
-						<div class="accordion-group">
-							<div class="accordion-heading">
-								<a href="#collapseSix" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2">
-									When Chefly will be launched?
-								</a>
-							</div>
-							<div id="collapseSix" class="accordion-body collapse">
-								<div class="accordion-inner">
-									<em>Chefly</em> will be launched very soon! For the time being, it is a crowdfunding campaign in order to determine the feasibility of the project.
-								</div>
-							</div>
-						</div>
-
 					</div>
 				</div>
 
