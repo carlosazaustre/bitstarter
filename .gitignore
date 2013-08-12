@@ -1,3 +1,15 @@
+# Heroku enviromental variables
+.env
+
+# npm packages
 node_modules
+
+# Mac
+.DS_Store
+
+# Emacs
+*~
+
+# Others
 temp.html
-#**.*
+
