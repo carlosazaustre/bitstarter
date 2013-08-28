@@ -4,13 +4,14 @@ var async   = require('async')
   , express = require('express')
   , fs      = require('fs')
   , http    = require('http')
-  , https   = require('https')
-  , db      = require('./models');
+  , https   = require('https');
+//  , db      = require('./models');
 
 var app = express();
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.set('port', process.env.PORT || 8080);
+app.use(express.static('public'));
 
 // Render homepage (note trailing slash): example.com/
 app.get('/', function(request, response) {
@@ -18,6 +19,11 @@ app.get('/', function(request, response) {
   response.send(data);
 });
 
+http.createServer(app).listen(app.get('port'), function() {
+  console.log("Listening on " + app.get('port'));
+});
+
+/*
 // Render example.com/orders
 app.get('/orders', function(request, response) {
   global.db.Order.findAll().success(function(orders) {
@@ -109,3 +115,4 @@ var addOrder = function(order_obj, callback) {
     });
   }
 };
+*/
