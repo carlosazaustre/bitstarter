@@ -1,4 +1,4 @@
-/*!Fri Aug 30 2013 01:06:54 */
+/*!Fri Aug 30 2013 01:07:55 */
 /*!
  * Bootstrap v3.0.0
  *
@@ -6823,24 +6823,26 @@ h1,h2,h3,h4,p.lead{font-family:'Raleway';text-align:center}
 h1,p.lead{color:#333}
 nav{font-family:'Raleway'}
 footer{font-size:.8em;text-align:center}
-.copy p{margin:1em;text-align:justify}
+div.copy p{margin:16% 1em;text-align:justify}
+p.copy{font-size:1.3em}
 .heading{background:url("img/background.png");-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;background-position:center center;background-repeat:no-repeat;margin:0 auto;padding:50px 0 0 0;}
-.heading figure{height:350px;}
+.heading figure{height:300px;}
 .heading figure .hand{height:100%;padding:0 60px 0 0;margin:0 auto}
 .logo{height:20px;}
 .logo img{height:100%}
 .mailist{background:rgba(50,50,50,0.3);padding:1em;}
-.mailist p{text-align:center;padding:1em 0 0 0}
-.mailist p:first-child{font-size:1.2em;padding:0}
+.mailist p{font-size:1.2em;text-align:center;padding:1em 0 0 0}
 .mailist input[type=email]{text-align:center;background-color:#333}
 .mailist .btn{background-color:#eaeaea;border-color:#eaeaea;color:#333}
-#team{background:rgba(150,150,150,0.1);padding:0 0 1em 0;}
+#team{padding:0 0 1em 0;}
 #team .img_team{margin:0 auto;width:200px;}
 #team .img_team img{border-radius:120px;-webkit-border-radius:120px;-moz-border-radius:120px;width:100%}
 #team .text-center{font-family:'Raleway'}
 #team .name{margin:.5em 0 0 0;color:#333}
 #team .carge{margin:0;color:#919191}
-#features2{background:rgba(50,50,50,0.3)}
+#features2{background:rgba(180,180,180,0.3);}
+#features2 div{margin:0 auto;text-align:center;margin:1em 0}
+#features2 .icon{color:#5371c5;font-size:4em}
 #faq{margin:0 0 2em 0}
 .icon-bar{background-color:#333 !important}
 .navbar{background:rgba(50,50,50,0.3)}
@@ -6848,3 +6850,9 @@ footer{font-size:.8em;text-align:center}
 .navbar-inverse .navbar-brand{color:#333}
 .navbar-inverse .navbar-nav > .active > a,.navbar-inverse .navbar-nav > .active > a:hover,.navbar-inverse .navbar-nav > .active > a:focus,.navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus{background-color:rgba(50,50,50,0.7)}
 .navbar-inverse .navbar-nav > li > a{color:#555}
+@media screen and (min-width: 768px){.heading h1{font-size:5em;position:absolute;top:1.5em;left:6em}
+.heading p.lead{font-size:1.5em;position:absolute;top:10em;left:20em}
+.heading div.row{display:inline-block}
+.heading figure{height:510px;}
+.heading figure .hand{margin:0 0 0 5em;padding:0}
+}

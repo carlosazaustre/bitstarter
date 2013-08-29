@@ -2,6 +2,7 @@
 cheflygray = #ccc
 cheflyblack = #333
 cheflylightblack = #555
+cheflyblue = #5371c5
 
 body
   font-family 'Open Sans'
@@ -21,9 +22,11 @@ footer
   font-size .8em
   text-align center
 
-.copy p
-  margin 1em
+div.copy p
+  margin 16% 1em
   text-align justify
+p.copy
+  font-size 1.3em
 
 .heading
   background url('img/background.png')
@@ -35,7 +38,7 @@ footer
   margin 0 auto
   padding 50px 0 0 0
   figure
-    height 350px
+    height 300px
     .hand
       height 100%
       padding 0 60px 0 0
@@ -50,20 +53,18 @@ footer
   background rgba(50,50,50, 0.3)
   padding 1em
   p
+    font-size 1.2em
     text-align center
     padding 1em 0 0 0
-  p:first-child
-    font-size 1.2em
-    padding 0
   input[type=email]
     text-align center
     background-color cheflyblack
   .btn
     background-color #eaeaea
     border-color #eaeaea
-    color cheflyblack 
+    color cheflyblack
+
 #team
-  background rgba(150,150,150, 0.1)
   padding 0 0 1em 0
   .img_team
     margin 0 auto 
@@ -84,7 +85,14 @@ footer
     
 
 #features2
-  background rgba(50,50,50, 0.3)
+  background rgba(180,180,180, 0.3)
+  div
+    margin 0 auto
+    text-align center
+    margin 1em 0
+  .icon
+    color cheflyblue
+    font-size 4em
 
 #faq
   margin 0 0 2em 0
