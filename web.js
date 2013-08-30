@@ -20,7 +20,7 @@ app.get('/', function(request, response) {
 });
 
 // Render example.com/orders
-app.get('/orders', function(request, response) {
+app.get('/donations', function(request, response) {
   global.db.Order.findAll().success(function(orders) {
     var orders_json = [];
     orders.forEach(function(order) {

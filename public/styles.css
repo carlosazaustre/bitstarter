@@ -1,4 +1,4 @@
-/*!Fri Aug 30 2013 01:07:55 */
+/*!Fri Aug 30 2013 11:09:45 */
 /*!
  * Bootstrap v3.0.0
  *
@@ -6825,6 +6825,7 @@ nav{font-family:'Raleway'}
 footer{font-size:.8em;text-align:center}
 div.copy p{margin:16% 1em;text-align:justify}
 p.copy{font-size:1.3em}
+.btn-bitcoin{margin:0 auto;padding-left:3em}
 .heading{background:url("img/background.png");-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;background-position:center center;background-repeat:no-repeat;margin:0 auto;padding:50px 0 0 0;}
 .heading figure{height:300px;}
 .heading figure .hand{height:100%;padding:0 60px 0 0;margin:0 auto}
