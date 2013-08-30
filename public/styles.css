@@ -1,4 +1,4 @@
-/*!Fri Aug 30 2013 11:09:45 */
+/*!Fri Aug 30 2013 12:52:28 */
 /*!
  * Bootstrap v3.0.0
  *
@@ -6823,9 +6823,9 @@ h1,h2,h3,h4,p.lead{font-family:'Raleway';text-align:center}
 h1,p.lead{color:#333}
 nav{font-family:'Raleway'}
 footer{font-size:.8em;text-align:center}
-div.copy p{margin:16% 1em;text-align:justify}
-p.copy{font-size:1.3em}
-.btn-bitcoin{margin:0 auto;padding-left:3em}
+div.copy p{margin:10% 1em;text-align:justify}
+p.copy{font-size:1em}
+.btn-bitcoin{margin:0 auto;padding-left:3em !important}
 .heading{background:url("img/background.png");-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;background-position:center center;background-repeat:no-repeat;margin:0 auto;padding:50px 0 0 0;}
 .heading figure{height:300px;}
 .heading figure .hand{height:100%;padding:0 60px 0 0;margin:0 auto}
@@ -6842,7 +6842,7 @@ p.copy{font-size:1.3em}
 #team .name{margin:.5em 0 0 0;color:#333}
 #team .carge{margin:0;color:#919191}
 #features2{background:rgba(180,180,180,0.3);}
-#features2 div{margin:0 auto;text-align:center;margin:1em 0}
+#features2 div{text-align:center;margin:1em auto !important}
 #features2 .icon{color:#5371c5;font-size:4em}
 #faq{margin:0 0 2em 0}
 .icon-bar{background-color:#333 !important}
@@ -6851,9 +6851,10 @@ p.copy{font-size:1.3em}
 .navbar-inverse .navbar-brand{color:#333}
 .navbar-inverse .navbar-nav > .active > a,.navbar-inverse .navbar-nav > .active > a:hover,.navbar-inverse .navbar-nav > .active > a:focus,.navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus{background-color:rgba(50,50,50,0.7)}
 .navbar-inverse .navbar-nav > li > a{color:#555}
-@media screen and (min-width: 768px){.heading h1{font-size:5em;position:absolute;top:1.5em;left:6em}
-.heading p.lead{font-size:1.5em;position:absolute;top:10em;left:20em}
+@media screen and (min-width: 728px){.heading h1{font-size:5em;position:absolute;top:1.5em;left:8em}
+.heading p.lead{font-size:1.5em;position:absolute;top:10em;left:26.8em}
 .heading div.row{display:inline-block}
-.heading figure{height:510px;}
+.heading figure{height:510px;margin:0 0 0 8em;}
 .heading figure .hand{margin:0 0 0 5em;padding:0}
+p.copy{font-size:1.3em}
 }

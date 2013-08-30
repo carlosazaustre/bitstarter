@@ -53,7 +53,7 @@ app.get('/refresh_orders', function(request, response) {
             response.send("error adding orders");
           } else {
             // orders added successfully
-            response.redirect("/orders");
+            response.redirect("/donations");
           }
         });
       } catch (error) {
