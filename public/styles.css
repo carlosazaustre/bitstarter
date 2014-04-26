@@ -1,4 +1,4 @@
-/*!Fri Aug 30 2013 13:06:33 */
+/*!Sat Apr 26 2014 17:30:12 */
 /*!
  * Bootstrap v3.0.0
  *
@@ -6820,7 +6820,7 @@ td.visible-print {
 .icon-google-plus:before{content:"\e008"}
 body{font-family:'Open Sans';font-size:16px;color:#555}
 h1,h2,h3,h4,p.lead{font-family:'Raleway';text-align:center}
-h1,p.lead{color:#333}
+h1,p.lead{color:#333;text-shadow:1px 1px 2px #fff;-moz-text-shadow:1px 1px 2px #fff;-webkit-text-shadow:1px 1px 2px #fff}
 nav{font-family:'Raleway'}
 footer{font-size:.8em;text-align:center}
 div.copy p{margin:10% 1em;text-align:justify}
@@ -6831,10 +6831,11 @@ p.copy{font-size:1em}
 .heading figure .hand{height:100%;padding:0 60px 0 0;margin:0 auto}
 .logo{height:20px;}
 .logo img{height:100%}
-.mailist{background:rgba(50,50,50,0.3);padding:1em;}
-.mailist p{font-size:1.2em;text-align:center;padding:1em 0 0 0}
-.mailist input[type=email]{text-align:center;background-color:#333}
-.mailist .btn{background-color:#eaeaea;border-color:#eaeaea;color:#333}
+.mailist,.explain{background:rgba(50,50,50,0.3);padding:1em;}
+.mailist p,.explain p{font-size:1.2em;text-align:center;padding:1em 0 0 0}
+.mailist form,.explain form{margin:0 3em}
+.mailist input[type=email],.explain input[type=email]{text-align:center;background-color:#eaeaea;border-color:#5b5b5b}
+.mailist .btn,.explain .btn{background-color:#333;border-color:#333;color:#eaeaea}
 #team{padding:0 0 1em 0;}
 #team .img_team{margin:0 auto;width:200px;}
 #team .img_team img{border-radius:120px;-webkit-border-radius:120px;-moz-border-radius:120px;width:100%}
@@ -6851,10 +6852,12 @@ p.copy{font-size:1em}
 .navbar-inverse .navbar-brand{color:#333}
 .navbar-inverse .navbar-nav > .active > a,.navbar-inverse .navbar-nav > .active > a:hover,.navbar-inverse .navbar-nav > .active > a:focus,.navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus{background-color:rgba(50,50,50,0.7)}
 .navbar-inverse .navbar-nav > li > a{color:#555}
-@media screen and (min-width: 826px){.heading h1{font-size:5em;position:absolute;top:1.5em;left:8em}
-.heading p.lead{font-size:1.5em;position:absolute;top:10em;left:26.8em}
+@media screen and (min-width: 925px){.heading h1{font-size:4em;position:absolute;top:1.5em;left:9.5em}
+.heading p.lead{font-size:1.4em;position:absolute;top:12em;left:26.8em}
 .heading div.row{display:inline-block}
 .heading figure{height:510px;margin:0 0 0 8em;}
-.heading figure .hand{margin:0 0 0 5em;padding:0}
+.heading figure .hand{margin:0 0 0 2em;padding:0}
 p.copy{font-size:1.3em}
+}@media screen and (min-width: 1181px){.heading p.lead{top:10em}
+.mailist{position:absolute;top:295px;width:575px;left:613px;font-size:.8em;background:none;font-weight:bold}
 }

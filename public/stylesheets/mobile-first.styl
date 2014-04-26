@@ -9,11 +9,14 @@ body
   font-size 16px
   color cheflylightblack
 
-h1,h2,h3,h4, p.lead 
+h1,h2,h3,h4, p.lead
   font-family 'Raleway'
   text-align center
 h1, p.lead
   color cheflyblack
+  text-shadow 1px 1px 2px #fff
+  -moz-text-shadow 1px 1px 2px #fff
+  -webkit-text-shadow 1px 1px 2px #fff
 
 nav
   font-family 'Raleway'
@@ -51,25 +54,28 @@ p.copy
   img
     height 100%
 
-.mailist
+.mailist, .explain
   background rgba(50,50,50, 0.3)
   padding 1em
   p
     font-size 1.2em
     text-align center
     padding 1em 0 0 0
+  form
+    margin 0 3em
   input[type=email]
     text-align center
-    background-color cheflyblack
-  .btn
     background-color #eaeaea
-    border-color #eaeaea
-    color cheflyblack
+    border-color cheflyblack + 40
+  .btn
+    background-color cheflyblack
+    border-color cheflyblack
+    color #eaeaea
 
 #team
   padding 0 0 1em 0
   .img_team
-    margin 0 auto 
+    margin 0 auto
     width 200px
     img
       border-radius 120px
@@ -84,7 +90,7 @@ p.copy
   .carge
     margin 0
     color cheflylightblack+60
-    
+
 
 #features2
   background rgba(180,180,180, 0.3)
@@ -113,4 +119,3 @@ p.copy
   background-color rgba(50,50,50, 0.7)
 .navbar-inverse .navbar-nav > li > a
   color cheflylightblack
-
